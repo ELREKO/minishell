@@ -1,54 +1,53 @@
 <p align="center">
-  <img src="doc/pic/Change-Shell-in-Linux.png" alt="how the programm look">
+  <img src="doc/pic/Change-Shell-in-Linux.png" alt="how the program looks">
 </p>
 
 # Minishell [Project](doc/PDF/minishell_subject.pdf)
 
-## Über das Projekt
-Minishell ist ein Projekt der 42 Coding School, das darauf abzielt, eine einfache Shell zu implementieren. Dieses Projekt hilft den Studenten, ein tieferes Verständnis für die Funktionsweise einer Shell und die Systemaufrufe zu entwickeln, die für die Ausführung von Befehlen erforderlich sind. Die Minishell unterstützt grundlegende Shell-Funktionen wie das Ausführen von Befehlen, das Arbeiten mit Umgebungsvariablen und einfache Pipelines.
+## About the Project
+MiniShell will introduce you to the world of shells, which provide a convenient text interface for interacting with your system. While shells may seem straightforward, they exhibit very specific and defined behavior in almost every situation, most of which must be handled correctly.
 
-## Voraussetzungen
-Um dieses Projekt zu kompilieren und auszuführen, benötigen Sie:
-- Ein UNIX-basiertes Betriebssystem (Linux, macOS, etc.)
+## Prerequisites
+To compile and run this project, you need:
+- A UNIX-based operating system (Linux, macOS, etc.)
 - GCC (GNU Compiler Collection)
 - Make
 
 ## Installation
-1. Klonen Sie das Repository:
+1. Clone the repository:
    ```sh
-   git clone https://github.com/ihr-benutzername/minishell.git
+   git clone https://github.com/your-username/minishell.git
    ```
-2. Navigieren Sie in das Projektverzeichnis:
+2. Navigate to the project directory:
    ```sh
    cd minishell
    ```
-3. Kompilieren Sie das Projekt mit `make`:
+3. Compile the project with `make`:
    ```sh
    make re
    ```
 
-## Verwendung
-Nach der erfolgreichen Kompilierung können Sie die Minishell starten, indem Sie den folgenden Befehl ausführen:
+## Usage
+After successful compilation, you can start the Minishell by executing the following command:
 ```sh
 ./minishell
 ```
-Jetzt können Sie Befehle wie in einer normalen Shell eingeben.
+Now you can enter commands as you would in a normal shell.
 
-Beispiel:
+Example:
 
 <p align="center">
-  <img src="doc/pic/programm_work.png" alt="how the programm look">
+  <img src="doc/pic/programm_work.png" alt="how the program looks">
 </p>
 
+## Features
+Minishell supports the following features:
+- Executing binaries from `PATH`, such as `ls`, `echo`, `cat`, etc.
+- Built-in shell commands like `cd`, `pwd`, `export`, `unset`, `env`, and `exit`
+- Pipe handling (e.g., `ls -l | grep minishell`)
+- Environment variables
 
-## Funktionen
-Minishell unterstützt die folgenden Funktionen:
-- Ausführen von Binärdateien aus `PATH`, wie `ls`, `echo`, `cat` usw.
-- Eingebaute Shell-Befehle wie `cd`, `pwd`, `export`, `unset`, `env` und `exit`
-- Pipe-Handling (z.B. `ls -l | grep minishell`)
-- Umgebungsvariablen
-
-## Programmaufbau 
+## Program Structure
 
 ```mermaid
 flowchart TD
@@ -70,14 +69,11 @@ flowchart TD
 
 ![overview](doc/pic/overview.png)
 
-### Module 
-- [init](doc/pic/init.png)
-- [interactive](doc/pic/interactive.png)
-- [tokeniser create](doc/pic/tokeniser_create.png)
-- [tokeniser check & hdoc](doc/pic/tokeniser_check_hdoc.png)
-- [expander](doc/pic/expander.png)
-- [parser](doc/pic/parser.png)
-- [executer](doc/pic/executer.png)
-
-
-
+### Modules 
+- [init](doc/markdownfile_pic/init.md)
+- [interactive](doc/markdownfile_pic/interactiv.md)
+- [tokeniser create](doc/markdownfile_pic/tokeniser_create.md)
+- [tokeniser check & hdoc](doc/markdownfile_pic/tokeniser_check.md)
+- [expander](doc/markdownfile_pic/expander.md)
+- [parser](doc/markdownfile_pic/parser.md)
+- [executer](doc/markdownfile_pic/executer.md)
