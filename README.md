@@ -57,7 +57,7 @@ flowchart TD
     B -->|Nein| D[Anderes Ziel]
     C --> E[Ende]
 
-    click C "doc/PDF/minishell_subject.pdf" "Klicken Sie hier, um die PDF-Datei zu öffnen"
+    click C "doc/pic/programm_work.png" "Klicken Sie hier, um die PDF-Datei zu öffnen"
 ```
 
 
