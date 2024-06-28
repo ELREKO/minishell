@@ -52,12 +52,32 @@ Minishell unterstützt die folgenden Funktionen:
 
 ```mermaid
 flowchart TD
-    A[Start] --> B{Entscheidung}
-    B -->|Ja| C[Ziel mit Link]
-    B -->|Nein| D[Anderes Ziel]
-    C --> E[Ende]
-
-    click C "doc/pic/programm_work.png" "Klicken Sie hier, um die PDF-Datei zu öffnen"
+    A[init]
+    B[interactive]
+    C[tokeniser create]
+    D[tokeniser check & hdoc]
+    E[expander]
+    F[parser]
+    G[executer]
+    A-->B
+    B-->C
+    C-->D
+    D-->E
+    E-->F
+    F-->G
+    G-->A
 ```
+
+![overview](doc/pic/overview.png)
+
+### Module 
+- [init](doc/pic/init.png)
+- [interactive](doc/pic/interactive.png)
+- [tokeniser create](doc/pic/tokeniser_create.png)
+- [tokeniser check & hdoc](doc/pic/tokeniser_check_hdoc.png)
+- [expander](doc/pic/expander.png)
+- [parser](doc/pic/parser.png)
+- [executer](doc/pic/executer.png)
+
 
 
