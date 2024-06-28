@@ -16,7 +16,7 @@ To compile and run this project, you need:
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com//ELREKO/minishell/
+   git clone https://github.com//ELREKO/minishell.git
    ```
 2. Navigate to the project directory:
    ```sh
