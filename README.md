@@ -2,10 +2,10 @@
   <img src="doc/pic/Change-Shell-in-Linux.png" alt="how the program looks">
 </p>
 
-# Minishell [Project](doc/PDF/minishell_subject.pdf)
+# Minishell
 
 ## About the Project
-MiniShell will introduce you to the world of shells, which provide a convenient text interface for interacting with your system. While shells may seem straightforward, they exhibit very specific and defined behavior in almost every situation, most of which must be handled correctly.
+Minishell is a simplified version of a Unix terminal that implements basic shell functions such as executing commands, navigating the file system, and managing processes. It helped me practically apply concepts like parsing, process management, and pipes in a project.
 
 ## Prerequisites
 To compile and run this project, you need:
